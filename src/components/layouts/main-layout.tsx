@@ -19,7 +19,9 @@ export default function MainLayout({ children }: LayoutData) {
     <div className="container-fluid">
       {/* <!-- Navbar brand --> */}
       <a className="navbar-brand nav-link" target="_blank" href="https://nextjs.org/docs">
-        <strong>NEXT.JS</strong>
+        <strong>
+            PCAXE
+        </strong>
       </a>
       <div className="navbar-expand" id="navbarExample01">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">

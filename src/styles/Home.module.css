@@ -6,7 +6,6 @@
 
 }
 
-
 .head {
   height: 100px;
   background: #333;
@@ -269,4 +268,5 @@
     transform: rotate(0deg);
   }
 }
+
 

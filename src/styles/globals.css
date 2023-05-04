@@ -39,6 +39,25 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 60vh;
+  padding-top: 0px;
+}
+
+
+.carousel-item:nth-child(1) {
+  background-image: url('/images/3d-render-network-communications-background-with-flowing-digital-particles.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -77,6 +96,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 html,
@@ -86,13 +106,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: black;
 }
 
 a {
@@ -105,3 +120,5 @@ a {
     color-scheme: dark;
   }
 }
+
+

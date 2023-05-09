@@ -6,6 +6,15 @@
 
 }
 
+.h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .head {
   height: 100px;
   background: #333;
@@ -23,10 +32,16 @@
 
 .main {
   width: 100%;
-  max-width: 1250px;
   margin: auto;
   padding: 80px 30px;
   min-height: 550px;
+  background: var(--primary-glow);
+}
+
+.block1 {
+  display: flex;
+  width: 75%;
+  margin-bottom: 100px;
 }
 
 .description {
@@ -103,12 +118,9 @@
 }
 
 .form {
-  height: 500px;
-  width: 500px;
-  border: 1px solid white;
-  border-radius: 20px;
-  margin-bottom: 50px;
-  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-table-style {

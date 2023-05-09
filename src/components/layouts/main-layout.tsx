@@ -37,6 +37,12 @@ export default function MainLayout({ children }: LayoutData) {
           <li className="nav-item">
             <Link className="nav-link" href="/users">Users</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/login">Login</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/signup">Signup</Link>
+          </li>
         </ul>
       </div>
     </div>
@@ -79,7 +85,7 @@ export default function MainLayout({ children }: LayoutData) {
       <div>{children}</div>
       <div>
         <footer className={styles.footer}>
-          <p>@2023 Time to Code! - TechShop Next Js Project</p>
+          <p>@2023 Time to Code! - PCAXE Next Js Project</p>
         </footer>
       </div>
     </div>

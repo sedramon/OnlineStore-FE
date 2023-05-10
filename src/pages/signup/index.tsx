@@ -55,7 +55,7 @@ export default function SignUpPage() {
         <div
           className={`d-flex flex-column align-items-center ${styles["form"]}`}
         >
-          <h1 className="mb-4">SIGN UP</h1>
+          <h1 className={`${styles.h1} m-3`}>SIGN UP PAGE</h1>
           <input
             className={"form-control mb-4"}
             type="text"

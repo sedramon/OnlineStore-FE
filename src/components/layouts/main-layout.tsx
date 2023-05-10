@@ -3,8 +3,12 @@ import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from "next/head";
+import UserContext from "@/UserContext";
+import { useContext } from "react";
 
 export default function MainLayout({ children }: LayoutData) {
+  const context = useContext(UserContext);
+
   return (
     <div>
       <Head>
@@ -43,8 +47,15 @@ export default function MainLayout({ children }: LayoutData) {
           <li className="nav-item">
             <Link className="nav-link" href="/signup">Signup</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/cart">Cart</Link>
+          </li>
+          <li className="nav-item">
+            {context.userContext.username}
+          </li>
         </ul>
       </div>
+      
     </div>
   </nav>
   {/* <!-- Navbar --> */}

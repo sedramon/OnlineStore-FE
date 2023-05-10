@@ -1,7 +1,8 @@
+import UserContext from "@/UserContext";
 import useFetch from "@/hooks/useFetch";
 import styles from "@/styles/Home.module.css";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 interface User {
@@ -12,6 +13,8 @@ interface User {
 
 export default function LoginPage() {
   const { data: users } = useFetch("http://localhost:8080/api/users", "GET");
+
+  const context = useContext(UserContext);
 
   const router = useRouter();
   const [errorMessage, setErrorMessage] = useState("");
@@ -25,6 +28,7 @@ export default function LoginPage() {
     );
     if (user) {
       router.push("/");
+      context.setUserContext(user);
     } else {
       setErrorMessage("Invalid username, email or password");
     }
@@ -43,7 +47,7 @@ export default function LoginPage() {
           <div
             className={`d-flex flex-column align-items-center ${styles["form"]}`}
           >
-            <h1 className="mb-4">LOGIN PAGE</h1>
+            <h1 className={`${styles.h1} m-3`}>LOGIN PAGE</h1>
             <input
               className={"form-control mb-4"}
               type="text"

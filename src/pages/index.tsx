@@ -17,6 +17,7 @@ export default function HomePage() {
               alt="image1"
               width={700}
               height={450}
+              className={styles.homeImage}
             />
           </div>
           <div className="d-flex flex-column justify-content-center  m-3">
@@ -53,6 +54,7 @@ export default function HomePage() {
               alt="image1"
               width={700}
               height={450}
+              className={styles.homeImage}
             />
           </div>
         </div>

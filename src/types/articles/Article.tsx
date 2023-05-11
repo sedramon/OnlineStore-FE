@@ -4,7 +4,7 @@ export type Article = {
       description: string;
       price: number;
       category : {
-        id : number;
+        id : string;
         name : string;
       };
     };
